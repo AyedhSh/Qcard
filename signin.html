@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign in to your account</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ <link rel="stylesheet" href="css/index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	 
+  <script src="https://use.fontawesome.com/d370ad41cf.js"></script>
+</head>
+<body>
+<div class="header-wrapper">
+<div class="container">
+<div class="row">
+<div class="col-md-2 header-style">
+<a href="#"> <i class="fa fa-chevron-left" aria-hidden="true"></i> Return to HomePage </a>
+</div>
+<div class="col-md-8 logo-wrapper">
+<a href="#">
+<img src="img/logo.png">
+</a>
+</div>
+<div class="col-md-2 header-style">
+<a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Sign Up </a>
+</div>
+</div>
+</div>
+</div>
+<!----- End Header -------> 
+<!--
+<div class="social-nav">
+
+<li>Face</li>
+<li>Twitt</li>
+<li>Inst</li>
+-->
+</div>
+<section class="sec-wrapper">
+<div class="container">
+<div class="row">
+<div class="col-md-4">
+<h2>EASY & SAFE WAY TO USE YOUR <span class="h-banner">MONEY</span></h2>
+<p class="text-banner">International Smart card has more than 10 years experience in issuing Biometric ID Cards for citizens in Iraq.</p>
+</div>
+<div class="col-md-4">
+<img src="img/banner.jpg" style="max-width: 380px; height: auto;" id="img-movement">
+</div>
+<div class="col-md-4">
+<div class="form-section">
+<h4>LOG IN</h4>
+<!--------- Form Section --------->
+
+<form  method="post" action="/en/login">
+<div class="form-group">
+ <label  class="required">Email / phone number</label>
+ <input type="text"  name="evp_user_login_form[login_username]" required="required" tabindex="1" class="form-control" autofocus="autofocus">
+ </div>
+
+<input type="hidden" name="form[login_password]"><div class="form-group">
+<label>
+Password (<a href="/en/reset-password">Can't log in?</a>)
+</label>
+<input type="password" name="login_password" class="form-control">
+</div>
+
+<div><button type="submit"  name="evp_user_login_form[login]" class="btn btn-primary btn-log-in" id="btn-sing-in">Log in</button></div>
+
+</form>
+
+<!--------- End Form Section ----->
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer></footer>
+
+ </body>
+ <script>
+ $(document).ready(function(){
+	$("#btn-sing-in").click(function(){
+	});
+});</script>
+ </html>

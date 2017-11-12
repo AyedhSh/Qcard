@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Notifications Page</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ <link rel="stylesheet" href="css/index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	 
+  <script src="https://use.fontawesome.com/d370ad41cf.js"></script>
+</head>
+<body>
+<div class="header-wrapper">
+<div class="container">
+<div class="row">
+<div class="col-md-3 logo-wrapper">
+<a href="#">
+<img src="img/logo.png">
+</a>
+</div>
+
+<div class="col-md-offset-4">
+
+<div class="header-icon">
+<li><div class="th-fa"><i class="fa fa-th fa-2x" aria-hidden="true"></i></div></li>
+<li>
+<div class="notes"><i class="fa fa-bell bell-color" aria-hidden="true"></i></div>
+</li>
+<li><img src="img/no_photo.png" class="icons-set"></li>
+
+</div>
+
+</div>
+
+</div>
+</div>
+</div>
+<!----- End Header -------> 
+
+
+<section class="sec-wrapper2">
+
+<div class="row">
+<div class="col-md-12">
+<div class="btn-sec">
+<button type="submit"  name="evp_user_login_form[login]" class="btn btn-def btn-log-in" id="btn-sing-in">Email Message</button>
+<button type="submit"  name="evp_user_login_form[login]" class="btn btn-primary2 btn-log-in" id="btn-sing-in">SMS Message</button>
+
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-5 notification-header">Preview</div>
+<div class="col-md-7 notification-header">Compose</div>
+</div>
+
+
+<div class="row">
+<div class="col-md-5 notification-body1">
+<div class="btn-group">
+  <button class="btn btn-default btn-lg dropdown-toggle d-width" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Show Successful Message <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    ...
+  </ul>
+</div>
+<label class="sel-view">Select view</label>
+<div class="btn-group">
+  <button class="btn btn-default btn-lg dropdown-toggle d-width" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Expanded notification view <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    ...
+  </ul>
+</div>
+<section class="message-view">
+<div class="row">
+<div class="col-md-8"><span class="m-time">9:07</span><span class="m-date">TH,MARCH 7</span></div>
+<div class="col-md-2"><span class="m-date">=</span></div>
+<div class="col-md-2"><span class="m-date">++</span></div>
+</div>
+
+
+<div class="row">
+<div class="col-md-2 m-icon">:)</div>
+<div class="col-md-4 m-content"><span class="m-date">Message Title</span></div>
+<div class="col-md-5 m-content"><span class="m-date">Message Contents</span></div>
+</div>
+
+<div class="row">
+<div class="col-md-2 m-icon">:)</div>
+<div class="col-md-4 m-content"><span class="m-date">Message Title</span></div>
+<div class="col-md-5 m-content"><span class="m-date">Message Contents</span></div>
+</div>
+
+<div class="row">
+<div class="col-md-2 m-icon">:)</div>
+<div class="col-md-4 m-content"><span class="m-date">Message Title</span></div>
+<div class="col-md-5 m-content"><span class="m-date">Message Contents</span></div>
+</div>
+
+</section>
+</div>
+<div class="col-md-7 notification-body2">
+<div class="row language-border">
+   <div class="col-md-8"><label>LANGUAGE</label></div>
+   <div class="col-md-4"><a href="#" class="add-lang">Add Language</a></div>
+</div>
+
+<div class="row filters">
+<p><label>Send To: </label></p>
+<div class="input-group">
+
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Phone Number <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Phone Number</a></li>
+          <li><a href="#">Age</a></li>
+          <li><a href="#">Gender</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Province</a></li>
+        </ul>
+      </div><!-- /btn-group -->
+      <input type="text" class="form-control" aria-label="...">
+    </div><!-- /input-group -->
+	<br/>
+	<form  method="post" action="/en/login">
+<div class="form-group">
+ <label  class="required">TITILE</label>
+ <input type="text"  name="evp_user_login_form[login_username]" required="required" tabindex="1" class="form-control" autofocus="autofocus">
+ </div>
+<input type="hidden" name="form[login_password]"><div class="form-group">
+<label>
+<br/>
+MESSAGE:
+</label>
+<input type="text-area" name="login_password" class="form-control">
+</div>
+
+<div><button type="submit"  name="evp_user_login_form[login]" class="btn btn-primary btn-log-in" id="btn-sing-in">Send</button></div>
+
+</form>
+	
+	
+</div>
+</div>
+</div>
+
+</section>
+
+<footer>
+<div class="row">
+<div class="col-md-offset-5">
+<p class="footer-text">Qi &copy; 2017. All rights reserved.</p>
+</div>
+</div>
+</footer>
+
+ </body>
+ </html>
